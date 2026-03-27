@@ -1,0 +1,15 @@
+[
+  {
+    "timestamp": "2026-03-23T11:31:04.283856",
+    "market": "crypto",
+    "action": "MULTI_MARKET_SENTRY_INTERCEPTION",
+    "details": {
+      "market_display": "₿ 加密貨幣",
+      "context": "BTC鏈上轉移分析",
+      "sentiment_score": 0.125,
+      "confidence": 0.8,
+      "estimated_tokens_saved": 328,
+      "block_reason": "加密貨幣情緒分數 0.125 在敏感範圍內 (±0.15)"
+    }
+  }
+]

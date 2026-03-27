@@ -1,0 +1,73 @@
+{
+  "model_name": "yiyanghkust/finbert-tone",
+  "huggingface_api_token": "",
+  "api_timeout_seconds": 30,
+  "max_text_length": 512,
+  "batch_size": 10,
+  
+  "v3_bridge": {
+    "enabled": true,
+    "prompt_template": "你現在是 FinBERT 情緒分析模型。請分析以下財經文字的情緒。\\n\\n文字：{text}\\n\\n請僅回傳 JSON 格式，包含兩個字段：\\n1. \\\"score\\\": 情緒分數，範圍 -1.0 到 1.0，負數表示負面，正數表示正面\\n2. \\\"confidence\\\": 信心度，範圍 0.0 到 1.0\\n\\n示例：\\n{{\\\"score\\\": 0.85, \\\"confidence\\\": 0.92}}\\n{{\\\"score\\\": -0.30, \\\"confidence\\\": 0.78}}\\n{{\\\"score\\\": 0.05, \\\"confidence\\\": 0.65}}\\n\\n請直接回傳 JSON，不要有任何其他文字。",
+    "fallback_to_simulation": true
+  },
+  
+  "sentiment_thresholds": {
+    "strong_negative": -0.5,
+    "negative": -0.2,
+    "neutral_low": -0.2,
+    "neutral_high": 0.2,
+    "positive": 0.2,
+    "strong_positive": 0.5
+  },
+  
+  "energy_saving": {
+    "default": {
+      "noise_threshold_low": -0.25,
+      "noise_threshold_high": 0.25,
+      "block_deepseek_reasoner": true,
+      "min_confidence_for_block": 0.65,
+      "description": "默認配置"
+    },
+    "us_stock": {
+      "noise_threshold_low": -0.25,
+      "noise_threshold_high": 0.25,
+      "block_deepseek_reasoner": true,
+      "min_confidence_for_block": 0.65,
+      "description": "美股市場 (平衡模式)"
+    },
+    "tw_stock": {
+      "noise_threshold_low": -0.25,
+      "noise_threshold_high": 0.25,
+      "block_deepseek_reasoner": true,
+      "min_confidence_for_block": 0.65,
+      "description": "台股市場 (與美股相同閾值)"
+    },
+    "crypto": {
+      "noise_threshold_low": -0.15,
+      "noise_threshold_high": 0.15,
+      "block_deepseek_reasoner": true,
+      "min_confidence_for_block": 0.65,
+      "description": "加密貨幣市場 (高靈敏度模式)"
+    },
+    "noise_categories": [
+      "neutral",
+      "slightly_negative",
+      "slightly_positive"
+    ],
+    "cost_comparison": {
+      "v3_token_cost": 1,
+      "r1_token_cost": 10,
+      "estimated_savings_per_block": 9
+    }
+  },
+  
+  "cache_enabled": true,
+  "cache_max_size": 1000,
+  "cache_ttl_hours": 24,
+  
+  "logging": {
+    "enabled": true,
+    "log_file": "finbert_analysis.log",
+    "log_level": "INFO"
+  }
+}
