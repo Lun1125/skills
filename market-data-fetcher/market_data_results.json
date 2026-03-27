@@ -1,0 +1,93 @@
+{
+  "timestamp": "2026-03-23T13:10:00Z",
+  "ticker_count": 3,
+  "results": [
+    {
+      "ticker": "NVDA",
+      "timestamp": "2026-03-23T13:10:00Z",
+      "status": "success_mock",
+      "error": "Yahoo Finance API 速率限制，使用模擬數據展示",
+      "data": {
+        "current_price": 950.25,
+        "previous_close": 945.5,
+        "market_cap": "2.35T",
+        "trailing_pe": 65.3,
+        "forward_pe": 55.2,
+        "week52_high": 980.75,
+        "week52_low": 450.25,
+        "volume": 42500000,
+        "average_volume": 38000000,
+        "dividend_yield": 0.003,
+        "eps": 14.55,
+        "currency": "USD",
+        "exchange": "NASDAQ",
+        "short_name": "NVIDIA Corp",
+        "long_name": "NVIDIA Corporation"
+      },
+      "metadata": {
+        "data_source": "Mock Data (展示用途)",
+        "cache_hit": false,
+        "request_time": "2026-03-23T13:10:00Z",
+        "note": "此為模擬數據，僅供功能展示"
+      }
+    },
+    {
+      "ticker": "2330.TW",
+      "timestamp": "2026-03-23T13:10:00Z",
+      "status": "success_mock",
+      "error": "Yahoo Finance API 速率限制，使用模擬數據展示",
+      "data": {
+        "current_price": 850.0,
+        "previous_close": 845.5,
+        "market_cap": "22.1T",
+        "trailing_pe": 18.5,
+        "forward_pe": 16.8,
+        "week52_high": 890.0,
+        "week52_low": 550.0,
+        "volume": 28500000,
+        "average_volume": 25000000,
+        "dividend_yield": 0.018,
+        "eps": 45.9,
+        "currency": "TWD",
+        "exchange": "TWSE",
+        "short_name": "台積電",
+        "long_name": "台灣積體電路製造股份有限公司"
+      },
+      "metadata": {
+        "data_source": "Mock Data (展示用途)",
+        "cache_hit": false,
+        "request_time": "2026-03-23T13:10:00Z",
+        "note": "此為模擬數據，僅供功能展示"
+      }
+    },
+    {
+      "ticker": "BTC-USD",
+      "timestamp": "2026-03-23T13:10:00Z",
+      "status": "success_mock",
+      "error": "Yahoo Finance API 速率限制，使用模擬數據展示",
+      "data": {
+        "current_price": 87500.0,
+        "previous_close": 87250.0,
+        "market_cap": "1.71T",
+        "trailing_pe": null,
+        "forward_pe": null,
+        "week52_high": 92000.0,
+        "week52_low": 45000.0,
+        "volume": 32500000000,
+        "average_volume": 28000000000,
+        "dividend_yield": null,
+        "eps": null,
+        "currency": "USD",
+        "exchange": "CRYPTO",
+        "short_name": "Bitcoin USD",
+        "long_name": "Bitcoin"
+      },
+      "metadata": {
+        "data_source": "Mock Data (展示用途)",
+        "cache_hit": false,
+        "request_time": "2026-03-23T13:10:00Z",
+        "note": "此為模擬數據，僅供功能展示"
+      }
+    }
+  ]
+}

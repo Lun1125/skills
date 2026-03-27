@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-03-23T13:05:00Z",
+  "ticker_count": 6,
+  "results": [
+    null,
+    {
+      "ticker": "NVDA",
+      "status": "error",
+      "error": "'NoneType' object is not subscriptable",
+      "data": null
+    },
+    null,
+    {
+      "ticker": "2330.TW",
+      "status": "error",
+      "error": "'NoneType' object is not subscriptable",
+      "data": null
+    },
+    null,
+    {
+      "ticker": "BTC-USD",
+      "status": "error",
+      "error": "'NoneType' object is not subscriptable",
+      "data": null
+    }
+  ]
+}
