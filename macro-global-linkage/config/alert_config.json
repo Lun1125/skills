@@ -1,0 +1,12 @@
+{
+  "enabled": true,
+  "momentum_alert_threshold": 15.0,
+  "notification_channels": ["telegram", "line"],
+  "webhook_url": "",
+  "min_risk_level_for_alert": "medium_high",
+  "line_channel_access_token": "${LINE_CHANNEL_ACCESS_TOKEN}",
+  "line_user_id": "${LINE_USER_ID}",
+  "telegram_bot_token": "${TELEGRAM_BOT_TOKEN}",
+  "telegram_chat_id": "${TELEGRAM_CHAT_ID}",
+  "__comment": "警報配置，環境變數需在運行時設置（對齊 bitfinex-lending 模組）"
+}
